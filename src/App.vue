@@ -5,17 +5,17 @@
 </template>
 
 <script>
-import EmptyLayout from "./layouts/EmptyLayout"
-import MainLayout from "./layouts/MainLayout"
+
+import MainLayout from "./layouts/MainLayout/MainLayout"
 
 export default {
   computed: {
     layout() {
-      return (this.$route.meta.layout || "Main") + "Layout"
+      return "MainLayout"
     }
   },
   components: {
-    EmptyLayout, MainLayout
+    MainLayout
   }
 }
 </script>

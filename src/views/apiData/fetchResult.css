@@ -1,0 +1,16 @@
+.fetchResult {
+    margin: 20px 0;
+}
+
+.fetchResult__text {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.json-text {
+    padding: 10px;
+    background: #333232;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ac8b45;
+}

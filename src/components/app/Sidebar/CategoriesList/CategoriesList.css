@@ -1,0 +1,30 @@
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.categories-list__item {
+  padding: 10px;
+  width: 100%;
+  color: #b2daf8;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  box-sizing: border-box;
+  text-align: center;
+  background: linear-gradient(to bottom, #205ab8, #003468);
+  margin-top: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+.categories-list__item:hover,
+.categories-list__item.active {
+  background: linear-gradient(to top, #205ab8, #003468);
+  text-decoration: underline;
+}
+.categories-list__item:hover:active,
+.categories-list__item.active:active {
+  transform: scale(1, 0.96);
+}
+/*# sourceMappingURL=CategoriesList.css.map */

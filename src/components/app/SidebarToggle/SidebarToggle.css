@@ -1,0 +1,73 @@
+.sidebar-toggle {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to bottom, #205ab8, #003468);
+  cursor: pointer;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.sidebar-toggle:hover {
+  background: linear-gradient(to top, #205ab8, #003468);
+}
+.sidebarToggle_close .sidebar-toggle__inner {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #b2daf8;
+  transition: all 0.4s;
+  position: relative;
+  transform: rotate(-135deg);
+  top: calc(50% - 1.5px);
+}
+.sidebarToggle_close .sidebar-toggle__inner:after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #b2daf8;
+  transition: all 0.4s;
+  top: 0;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.sidebarToggle_close .sidebar-toggle__inner:before {
+  content: "";
+  opacity: 0;
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #b2daf8;
+  transition: all 0.4s;
+  bottom: 0;
+  position: absolute;
+}
+.sidebar-toggle__inner {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #b2daf8;
+  transition: all 0.4s;
+  position: relative;
+  top: calc(50% - 1.5px);
+}
+.sidebar-toggle__inner:after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #b2daf8;
+  transition: all 0.4s;
+  top: 9px;
+  position: absolute;
+}
+.sidebar-toggle__inner:before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #b2daf8;
+  transition: all 0.4s;
+  bottom: 9px;
+  position: absolute;
+}
+/*# sourceMappingURL=SidebarToggle.css.map */

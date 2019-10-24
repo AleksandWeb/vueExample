@@ -1,0 +1,29 @@
+.nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+.nav__item {
+  padding: 10px 30px;
+  background: #0079d9;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  user-select: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #205ab8, #003468);
+}
+.nav__item:hover,
+.nav__item.active {
+  background: linear-gradient(to top, #205ab8, #003468);
+  text-decoration: underline;
+}
+.nav__item:hover:active,
+.nav__item.active:active {
+  transform: scale(1, 0.96);
+}
+/*# sourceMappingURL=TopMenu.css.map */
