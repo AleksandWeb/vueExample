@@ -4,6 +4,11 @@
   align-items: stretch;
   justify-content: flex-end;
 }
+@media screen and (max-width: 700px) {
+  .nav {
+    font-size: 14px;
+  }
+}
 .nav__item {
   padding: 10px 30px;
   background: #0079d9;
@@ -25,5 +30,12 @@
 .nav__item:hover:active,
 .nav__item.active:active {
   transform: scale(1, 0.96);
+}
+@media screen and (max-width: 700px) {
+  .nav__item {
+    border-top: 2px solid #333333;
+    padding: 5px 10px;
+    font-weight: normal;
+  }
 }
 /*# sourceMappingURL=TopMenu.css.map */

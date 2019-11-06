@@ -13,6 +13,7 @@
         components: {
             CategoriesList
         },
+
     }
 </script>
 

@@ -25,7 +25,6 @@
 
     import apiData from "../../views/apiData/apiData";
     import apiProducts from "../../views/apiProducts/apiProducts";
-    import apiCart from "../../views/apiCart/apiCart";
     import preloader from "../../views/preloader/preloader";
     export default {
         name: "MainLayout",
@@ -42,9 +41,21 @@
             }
         },
         components: {
-            TopMenu, Sidebar, SidebarToggle, apiData, apiProducts, apiCart, preloader
+            TopMenu, Sidebar, SidebarToggle, apiData, apiProducts, preloader
+        },
+        mounted: function() {
+            const testScreen = () => {
+                if(window.innerWidth <= 700) {
+                    this.isOpen = false;
+                } else {
+                    this.isOpen = true;
+                }
+            };
+            testScreen();
+            window.onresize = () => {
+                testScreen();
+            }
         }
-
     }
 
 </script>

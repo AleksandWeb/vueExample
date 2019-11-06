@@ -1,8 +1,13 @@
+@import "../../../layouts/less/screenSizes";
+
 .nav {
   flex-grow: 1;
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
+  .screenSmall({
+    font-size: 14px;
+  });
 }
 
 .nav__item {
@@ -25,4 +30,9 @@
       transform: scale(1, 0.96);
     }
   }
+  .screenSmall({
+    border-top: 2px solid #333333;
+    padding: 5px 10px;
+    font-weight: normal;
+  });
 }

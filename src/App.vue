@@ -7,15 +7,16 @@
 <script>
 
 import MainLayout from "./layouts/MainLayout/MainLayout"
+import CartLayout from "./layouts/CartLayout/CartLayout"
 
 export default {
   computed: {
     layout() {
-      return "MainLayout"
+      return this.$store.state.topMenu.layout;
     }
   },
   components: {
-    MainLayout
+    MainLayout, CartLayout
   }
 }
 </script>

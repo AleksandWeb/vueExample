@@ -13,4 +13,7 @@
     border-radius: 3px;
     font-size: 14px;
     color: #ac8b45;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: scroll;
 }

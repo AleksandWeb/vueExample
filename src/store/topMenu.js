@@ -5,28 +5,37 @@ export default {
         items: [
             {
                 id: 1,
-                name: "1. Вывод данных",
+                name: "Вывод данных",
                 active: true,
-                viewId: 1
+                viewId: 1,
+                layout: "MainLayout"
             },
             {
                 id: 2,
-                name: "2. Вывод товаров категорий",
+                name: "Вывод товаров",
                 active: false,
-                viewId: 2
+                viewId: 2,
+                layout: "MainLayout"
             },
             {
                 id: 3,
                 name: "Корзина",
                 active: false,
-                viewId: 3
+                viewId: 3,
+                layout: "CartLayout"
             },
-        ]
+        ],
+        layout: "MainLayout"
     },
     mutations: {
         [SET_ACTIVE](state, item) {
             state.items.forEach((dataItem) => {
-                dataItem.active = item.id === dataItem.id;
+                if(item.id === dataItem.id) {
+                    state.layout = dataItem.layout;
+                    dataItem.active = true;
+                } else {
+                    dataItem.active = false;
+                }
             });
         }
     },

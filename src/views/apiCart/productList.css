@@ -1,3 +1,8 @@
+.cart {
+    width: max-content;
+    margin: 0 auto;
+}
+
 .cartProduct {
     box-shadow: 0 0 7px 0 #333333;
     padding: 15px;
